@@ -1,0 +1,28 @@
+.card{
+  position: relative;
+  &:hover{
+    background: rgba(231, 228, 228, 0.3);
+  }
+
+  .cardContent{
+    margin-bottom: 20px;
+  }
+  .readMoreButton{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+    padding: 5px;
+    cursor: pointer;
+    &:hover{
+      background-color: rgba(234, 234, 234, 0.38);
+    }
+  }
+}
