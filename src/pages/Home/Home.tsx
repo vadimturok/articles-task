@@ -30,7 +30,7 @@ const Home = () => {
             {
                 error ? <div>Error...</div> : (isLoading || !filteredArticles) ? <Loader/> :
                 <div className={styles.results}>
-                    <div className={styles.resultsTitle}>Results: {articles.length}</div>
+                    <div className={styles.resultsTitle}>Results: {filteredArticles.length}</div>
                     <div className={styles.line}/>
                     <CardList keyword={keyword} articles={filteredArticles}/>
                 </div>
